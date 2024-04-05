@@ -11,7 +11,46 @@
       body {
         padding-top: 40px;
         padding-bottom: 40px;
-        background-image: url("/thumbnails/chicago.jpg")
+        background-color: #faeee7;
+        display: flex;
+        justify-content: center;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+      .name {
+        color: #272343;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons a {
+        color: #272343;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #ffd803;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color: #272343;
+        text-decoration: none;
+        flex-grow: 1;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
       }
 
       .banner-image {
@@ -19,6 +58,7 @@
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
+        align-items: center;
       }
 
       .thumbnail {
@@ -28,20 +68,27 @@
         object-fit: cover;
       }
 
+      .social-icons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
       .social {
         padding-top: 10px;
         padding-bottom: 10px;
-        text-align: center;
       }
 
     </style>
   </head>
   <body>
+    <div class=""items">
     <div class="banner">
       <img src="/thumbnails/profile_pic.jpg" alt="profile pic" class="banner-image"/>
     </div>
     <div class="name">Max J. Montesino</div>
-    <div class="social icons">
+    <div class="social-icons">
       <div class = "social">
         <img src="/thumbnails/github_thumbnail.png" alt="github logo" class="thumbnail"/>
         <a href="https://github.com/m-nt-s-no" target="_blank">Github</a>
@@ -63,5 +110,6 @@
         <a href="https://stackoverflow.com/users/13955591/m-nt-s-no" target="_blank">StackOverflow</a>
       </div>
     </div>
+  </div>
   </body>
 </html>
